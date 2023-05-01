@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Rubik', sans-serif;
+}
+body {
+  display: grid;
+  gap: 4rem;
+  background-color: white;
+  position: relative;
+  padding: 4rem 0;
+}
+
+.purple-background {
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  top: 0;
+  left: -50%;
+  border-radius: 0 0 1000px 1000px;
+}
+.gray-background {
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  background-color: hsl(270, 20%, 96%);
+  bottom: 0;
+  right: -50%;
+  border-radius: 1000px 1000px 0 0;
+}
+.phone-container {
+  position: relative;
+  background-color: white;
+  width: 247px;
+  border-radius: 29px;
+  margin: auto;
+  padding: 0.7rem 0.59rem;
+  box-shadow: 20px 20px 20px 10px hsla(0, 0%, 0%, 0.1);
+}
+.phone-head {
+  position: absolute;
+  background-color: white;
+  height: 29px;
+  width: 52%;
+  border-radius: 50px;
+  top: 0;
+  left: 24%;
+}
+.app-container {
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 45px;
+}
+.app-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  height: 66px;
+  padding: 1.9rem 1rem 0.75rem 1rem;
+  border-radius: 20px 20px 5px 5px;
+}
+.profile {
+  display: flex;
+  gap: 0.3rem;
+  align-items: flex-start;
+  color: white;
+}
+.back-arrow i {
+  border: solid white;
+  border-width: 2px 0 0 2px;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.avatar img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.profile-info {
+  margin-left: 0.2rem;
+}
+.name {
+  font-weight: 500;
+  font-size: 0.68rem;
+}
+.availability {
+  font-size: 0.5rem;
+  color: hsl(276, 100%, 81%);
+  margin-top: 0.1rem;
+}
+.dot {
+  display: block;
+  height: 2px;
+  width: 2px;
+  background-color: hsl(206, 6%, 79%);
+  border-radius: 50%;
+  margin-bottom: 1px;
+}
+.chat {
+  background-color: hsl(270, 20%, 96%);
+  padding: 0.7rem 0.5rem;
+  border-radius: 0 0 15px 15px;
+  font-size: 0.5rem;
+  line-height: 1.35;
+}
+.left-chat {
+  float: left;
+  color: hsl(276, 55%, 52%);
+  background-color: hsla(270, 7%, 64%, 0.2);
+  padding: 0.35rem 0.43rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px 10px 10px 5px;
+  max-width: 60%;
+  width: max-content;
+}
+.right-chat {
+  float: right;
+  margin-left: 40%;
+  color: hsl(271, 15%, 43%);
+  background-color: white;
+  padding: 0.4rem 0.4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px 10px 5px 10px;
+  max-width: 60%;
+  width: max-content;
+}
+.dogs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+  padding: 0;
+  margin-top: 0.5rem;
+  background-color: transparent;
+}
+.dogs img {
+  width: 40px;
+  border-radius: 10px;
+}
+.last-right-chat {
+  margin-bottom: 1.25rem;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  padding: 0.5rem 1rem;
+  padding-left: 0.5rem;
+  width: 75%;
+  max-width: 100%;
+}
+.price-left {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: hsl(206, 6%, 79%);
+}
+.check-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 1px solid hsl(289, 100%, 72%);
+}
+.price-right {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+form {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+input {
+  font-size: 0.65rem;
+  flex-grow: 1;
+  border-radius: 25px;
+  padding: 0.8rem 0 0.5rem 1.25rem;
+  border: none;
+  outline: none;
+  margin-top: 0.5rem;
+}
+input::placeholder {
+  font-family: 'Rubik', sans-serif;
+  color: hsl(206, 6%, 79%);
+  font-size: 0.55rem;
+}
+form button {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-33%);
+  width: 25px;
+  height: 25px;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 100%;
+  border: none;
+}
+form button i {
+  border: solid white;
+  border-width: 0 2.9px 2.9px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.text {
+  position: relative;
+  text-align: center;
+  padding: 0 2rem;
+  max-width: 500px;
+  margin: auto;
+}
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 2rem;
+}
+.text p {
+  font-size: 1rem;
+  color: hsl(270, 7%, 64%);
+  line-height: 1.75;
+}
+@media (width > 820px) {
+  body {
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+  }
+  .purple-background {
+    height: 85%;
+    width: 40%;
+    left: -15%;
+  }
+  .gray-background {
+    height: 85%;
+    width: 40%;
+    right: -15%;
+  }
+  .text {
+    text-align: left;
+  }
+}
